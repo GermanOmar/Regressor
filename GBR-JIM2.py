@@ -36,7 +36,6 @@ y_pred=GBR.predict(x_test)
 
 #METRICS: R2, RMSE, MAPE
 from sklearn.metrics import r2_score
-from sklearn.metrics import r2_score
 R2=r2_score(y_test, y_pred)
 RMSE = np.square(np.subtract(y_test,y_pred)).mean()
 MAPE = np.mean(np.abs((y_test - y_pred) / y_test)) * 100
